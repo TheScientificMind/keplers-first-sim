@@ -10,7 +10,18 @@
     <div id="header">
         <h1>Kepler's First Law: Simulated Elliptical Orbits</h1>
     </div>
-    <canvas id="myCanvas"></canvas>
+    <div class="canvas-container">
+        <canvas id="myCanvas"></canvas>
+    </div>
+
+    <div class="controls">
+        <label for="a-slider">Semi-Major Axis (a): <span id="a-value">4</span></label>
+        <input id="a-slider" type="range" min=".1" max="25" value = "4">
+
+        <label for="b-slider">Semi-Minor Axis (b): <span id="b-value">3.5</span></label>
+        <input id="b-slider" type="range" min="1" max="10" value = "3.5">
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

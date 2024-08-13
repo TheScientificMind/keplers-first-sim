@@ -6,15 +6,26 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     background-color: #222222;
 }
 
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #myCanvas {
-    border: 2px solid #1b1b1b;
+    border: 2px solid #ffffff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     background-color: #222222;
 }
@@ -22,5 +33,59 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #1b1b1b;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.controls {
+    position: absolute;
+    top: 12.5vh;
+    right: 3vh;
+    background: #190a3f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.controls label {
+    font-family: Verdana, Arial;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.controls input {
+    width: 200px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    width: 200px; /* Set width of slider */
+    height: 8px; /* Set height of track */
+    background: #191919; /* Track color */
+    border-radius: 5px; /* Rounded track */
+    outline: none; /* Remove default outline */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    width: 20px; /* Width of knob */
+    height: 20px; /* Height of knob */
+    background: #000; /* Black knob color */
+    border-radius: 50%; /* Make knob circular */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Width of knob */
+    height: 20px; /* Height of knob */
+    background: #000; /* Black knob color */
+    border-radius: 50%; /* Make knob circular */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px; /* Width of knob */
+    height: 20px; /* Height of knob */
+    background: #000; /* Black knob color */
+    border-radius: 50%; /* Make knob circular */
+    cursor: pointer; /* Change cursor on hover */
 }
